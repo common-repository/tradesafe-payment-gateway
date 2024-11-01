@@ -1,0 +1,936 @@
+Changelog
+
+All notable changes to this project will be documented in this file.
+
+2.18.12 (2024-09-27)
+
+Bug Fixes
+
+-   Allow orders to be updated if order is marked as complete (#42)
+    (8ab598)
+
+------------------------------------------------------------------------
+
+2.18.11 (2024-09-23)
+
+Bug Fixes
+
+-   Changed how main orders are accepted (#41) (1e97d1)
+
+------------------------------------------------------------------------
+
+2.18.10 (2024-09-09)
+
+Bug Fixes
+
+-   Added note to order if marked as completed instead of delivered
+    (938560)
+
+------------------------------------------------------------------------
+
+2.18.9 (2024-08-29)
+
+Bug Fixes
+
+-   Added static definition to function (a1a8ae)
+
+------------------------------------------------------------------------
+
+2.18.8 (2024-08-28)
+
+Bug Fixes
+
+-   Changed how withdrawals are executed with dokan (dbdeee)
+
+------------------------------------------------------------------------
+
+2.18.7 (2024-08-20)
+
+Bug Fixes
+
+-   Added check for missing transaction id meta data (5f0d53)
+
+------------------------------------------------------------------------
+
+2.18.6 (2024-08-16)
+
+Bug Fixes
+
+-   Removed option to set fee allocation (7eedfc)
+
+------------------------------------------------------------------------
+
+2.18.5 (2024-08-15)
+
+Bug Fixes
+
+-   Changed how user id is loaded when checking if a withdraw method is
+    valid (729902)
+
+------------------------------------------------------------------------
+
+2.18.4 (2024-08-14)
+
+Bug Fixes
+
+-   Changed how user id is loaded for withdraw request (049d82)
+
+------------------------------------------------------------------------
+
+2.18.3 (2024-08-02)
+
+Bug Fixes
+
+-   Change how user id is loaded when verifing withdrawals (54394f)
+-   Mark orders status as on-hold when a dispute is raised (fccb7d)
+
+------------------------------------------------------------------------
+
+2.18.2 (2024-07-24)
+
+Bug Fixes
+
+-   Added additional infomation to dokan error message (e551f3)
+-   Updated label for payment frequency (5d8af6)
+
+------------------------------------------------------------------------
+
+2.18.1 (2024-06-12)
+
+Bug Fixes
+
+-   Added check for required fields for withdrawals in Dokan (8f9e40)
+-   Allow suborders to be marked as complete (6fd137)
+
+------------------------------------------------------------------------
+
+2.18.0 (2024-06-07)
+
+Features
+
+-   Added custom inspection period (55ce6b)
+
+------------------------------------------------------------------------
+
+2.17.0 (2024-05-30)
+
+Features
+
+-   Added code to enable support for real time clearance payments
+    (a410c5)
+
+Bug Fixes
+
+-   Refactored block js (73bcca)
+
+------------------------------------------------------------------------
+
+2.16.0 (2024-02-13)
+
+Features
+
+-   Added option to prevent the order status from been updated after its
+    been maked as complete (979b1e)
+
+------------------------------------------------------------------------
+
+2.15.2 (2024-02-02)
+
+Bug Fixes
+
+-   Updated dokan withdraw settings page to display registred banking
+    details (6fde04)
+
+------------------------------------------------------------------------
+
+2.15.1 (2024-02-01)
+
+Bug Fixes
+
+-   Force dokan to use default payout frequency when updating wethdrawal
+    settings (281206)
+
+------------------------------------------------------------------------
+
+2.15.0 (2024-01-26)
+
+Features
+
+-   Added option to set a custom redirect page (a71a24)
+
+------------------------------------------------------------------------
+
+2.14.2 (2024-01-25)
+
+Bug Fixes
+
+-   Don’t try update user profile when the user is using a diffrent
+    payment gateway (472e20)
+
+------------------------------------------------------------------------
+
+2.14.1 (2024-01-12)
+
+Bug Fixes
+
+-   Moved constants outside init function (b69bcd)
+
+------------------------------------------------------------------------
+
+2.14.0 (2024-01-11)
+
+Features
+
+-   Added support for WooCommerce blocks (3bdf8e)
+
+------------------------------------------------------------------------
+
+2.13.4 (2023-10-30)
+
+Bug Fixes
+
+-   Changed how an order is updated when marked as completed (f5bf43)
+-   Only start delivery for allocation if in a created state (3b37a9)
+
+------------------------------------------------------------------------
+
+2.13.3 (2023-09-04)
+
+Bug Fixes
+
+-   Changed how completed hook is triggured (ff004a)
+
+------------------------------------------------------------------------
+
+2.13.2 (2023-08-31)
+
+Bug Fixes
+
+-   Updated order notes to include more information (fb654c)
+
+------------------------------------------------------------------------
+
+2.13.1 (2023-08-17)
+
+Bug Fixes
+
+-   Changed how order states are checked for initiated transactions
+    (796fe1)
+
+------------------------------------------------------------------------
+
+2.13.0 (2023-08-07)
+
+Features
+
+-   Added propper support for the refunded order status (0642ad)
+
+------------------------------------------------------------------------
+
+2.12.9 (2023-07-31)
+
+Bug Fixes
+
+-   Added additional option to callback to handle the initiated
+    transaction state (62b17a)
+
+------------------------------------------------------------------------
+
+2.12.8 (2023-07-27)
+
+Bug Fixes
+
+-   Removed order status check from callback (2fb5a5)
+
+------------------------------------------------------------------------
+
+2.12.7 (2023-07-26)
+
+Bug Fixes
+
+-   Delete access token when saving settings page (a0f51f)
+
+------------------------------------------------------------------------
+
+2.12.6 (2023-07-25)
+
+Reverts
+
+-   Removed workaround for DokanPro commission bug (08c990)
+
+------------------------------------------------------------------------
+
+2.12.5 (2023-07-25)
+
+Bug Fixes
+
+-   Ensure dokan pro hooks are not loaded twice (4f7d10)
+
+------------------------------------------------------------------------
+
+2.12.4 (2023-07-24)
+
+Bug Fixes
+
+-   Added work around for dokan pro not loading hooks (7ebe1a)
+
+------------------------------------------------------------------------
+
+2.12.3 (2023-07-21)
+
+Bug Fixes
+
+-   Removed dynamic environment check (b12746)
+
+------------------------------------------------------------------------
+
+2.12.2 (2023-07-07)
+
+Bug Fixes
+
+-   Don’t add custom party if token is empty (c3cdf0)
+-   Extended error handeling for try catch statements (02570b)
+
+------------------------------------------------------------------------
+
+2.12.1 (2023-06-06)
+
+Bug Fixes
+
+-   Set order status if payment has been made (016219)
+
+------------------------------------------------------------------------
+
+2.12.0 (2023-06-06)
+
+Features
+
+-   Added verification page for payments (325c3c)
+
+------------------------------------------------------------------------
+
+2.11.4 (2023-03-01)
+
+Bug Fixes
+
+-   Ensure correct payout interval is set when updating user tokens
+    (a4f226)
+
+------------------------------------------------------------------------
+
+2.11.3 (2023-02-27)
+
+Bug Fixes
+
+-   Changed requirements for wallet page to be shown (a413c2)
+
+------------------------------------------------------------------------
+
+2.11.2 (2023-02-23)
+
+Bug Fixes
+
+-   Removed profile check from is valid check to lower api requests
+    (e7b520)
+
+------------------------------------------------------------------------
+
+2.11.1 (2023-01-20)
+
+Bug Fixes
+
+-   Changed error handeling for mark as delivered button (bcbca8)
+-   Reduce the delivery days from 7 days to 5 (bf5d47)
+
+------------------------------------------------------------------------
+
+2.11.0 (2023-01-06)
+
+Features
+
+-   Added button to mark in transit orders as delivered (0af891)
+
+Bug Fixes
+
+-   Do not load transaction on order page if notification delay is not
+    enabled (799bb3)
+
+------------------------------------------------------------------------
+
+2.10.0 (2022-12-14)
+
+Features
+
+-   Added filter to add parties to a transaction (415318)
+
+------------------------------------------------------------------------
+
+2.9.2 (2022-12-12)
+
+Bug Fixes
+
+-   Added check for update function to avoid undefined constant (6c6e73)
+
+------------------------------------------------------------------------
+
+2.9.1 (2022-12-12)
+
+Bug Fixes
+
+-   Hide days for delay field if not used (3ffd8f)
+
+------------------------------------------------------------------------
+
+2.9.0 (2022-12-12)
+
+Features
+
+-   Added option to defer delivery notifications (6d7205)
+
+Bug Fixes
+
+-   Allow cancelled orders to be reactivated (28f2e2)
+-   Changed how the token expiry date is checked (96470a)
+-   Don’t init form on every page load (0839cf)
+-   Hide application details if authenticated (312105)
+-   Reduce number of queries retrieving bank account details (fa1c08)
+
+------------------------------------------------------------------------
+
+2.8.0 (2022-12-02)
+
+Features
+
+-   Added function to update gateway description automatically (53d8d9)
+
+Bug Fixes
+
+-   Changed character decoding for line items (65670f)
+
+------------------------------------------------------------------------
+
+2.7.2 (2022-11-30)
+
+Bug Fixes
+
+-   Changed character decoding for line items (65670f)
+
+------------------------------------------------------------------------
+
+2.7.1 (2022-11-21)
+
+Bug Fixes
+
+-   Added support for custom processing fees (cfc3e1)
+
+------------------------------------------------------------------------
+
+2.7.0 (2022-11-16)
+
+Features
+
+-   Added content encoding to api requests (2ead02)
+
+Bug Fixes
+
+-   Set order payment method title to prevent escaped html from showing
+    in the payment method field (3cfa01)
+
+------------------------------------------------------------------------
+
+2.6.3 (2022-11-10)
+
+Bug Fixes
+
+-   Changed how access tokens are stored for reuse (411b3e)
+
+------------------------------------------------------------------------
+
+2.6.2 (2022-11-08)
+
+Bug Fixes
+
+-   Updated user agent string (b90378)
+
+------------------------------------------------------------------------
+
+2.6.1 (2022-11-07)
+
+Bug Fixes
+
+-   Optimised how tokens are generated to avoid unnecessary api calls
+    (1b6821)
+
+------------------------------------------------------------------------
+
+2.6.0 (2022-10-14)
+
+Features
+
+-   Added helper function to lookup token data (31c730)
+
+------------------------------------------------------------------------
+
+2.5.3 (2022-09-20)
+
+Bug Fixes
+
+-   Don’t apply defaults to order if user id is zero (23eecc)
+
+------------------------------------------------------------------------
+
+2.5.2 (2022-09-16)
+
+Bug Fixes
+
+-   Changed when classes are initialised (76abd7)
+
+------------------------------------------------------------------------
+
+2.5.1 (2022-09-09)
+
+Bug Fixes
+
+-   Updated plugin descriptions (c9ec0b)
+
+------------------------------------------------------------------------
+
+2.5.0 (2022-09-08)
+
+Features
+
+-   Added new checkout page (af1645)
+
+------------------------------------------------------------------------
+
+2.4.11 (2022-07-28)
+
+Bug Fixes
+
+-   Removed hidden class from banking details when using Dokan (32e0e5)
+
+------------------------------------------------------------------------
+
+2.4.10 (2022-07-27)
+
+Bug Fixes
+
+-   Changed how bank details checkbox is checked (9cf919)
+
+------------------------------------------------------------------------
+
+2.4.9 (2022-07-20)
+
+Bug Fixes
+
+-   Corrected issue where a vendor id is not loaded correctly when using
+    dokan (7d857d)
+
+------------------------------------------------------------------------
+
+2.4.8 (2022-07-20)
+
+Bug Fixes
+
+-   Updated avalibility filter to verify order total or cart total
+    instead of both (22045c)
+
+------------------------------------------------------------------------
+
+2.4.7 (2022-07-18)
+
+Bug Fixes
+
+-   Allow callbacks to update orders with a failed status (be4489)
+-   Changed how plugin avalibility is checked (a798a1)
+
+------------------------------------------------------------------------
+
+2.4.6 (2022-05-23)
+
+Bug Fixes
+
+-   Changed how errors are logged (1e8762)
+
+------------------------------------------------------------------------
+
+2.4.5 (2022-05-20)
+
+Bug Fixes
+
+-   Add support for setting up payment settings in dokan wizard (d7d166)
+
+------------------------------------------------------------------------
+
+2.4.4 (2022-05-19)
+
+Bug Fixes
+
+-   Always load token id through helper function instead of checking
+    directly (084fd9)
+
+------------------------------------------------------------------------
+
+2.4.3 (2022-05-17)
+
+Bug Fixes
+
+-   Added extra debug information to error response when saving a token
+    while debug is set to true (4dd511)
+
+------------------------------------------------------------------------
+
+2.4.2 (2022-05-17)
+
+Bug Fixes
+
+-   Removed vendor id from active payment methods function (31b96c)
+
+------------------------------------------------------------------------
+
+2.4.1 (2022-05-17)
+
+Bug Fixes
+
+-   Updated how withdraw settings are saved to support new withdraw
+    method page (695521)
+
+------------------------------------------------------------------------
+
+2.4.0 (2022-05-10)
+
+Features
+
+-   Allow admin users to view basic tradesafe details when editing a
+    user (7887e2)
+
+------------------------------------------------------------------------
+
+2.3.7 (2022-05-09)
+
+Bug Fixes
+
+-   Changed option title to reduce confusion (589b0b)
+-   Ensure that token metadata is properly saved (2dff6c)
+
+------------------------------------------------------------------------
+
+2.3.6 (2022-04-22)
+
+Bug Fixes
+
+-   Allow decimal values for marketplace commission (7f2576)
+
+------------------------------------------------------------------------
+
+2.3.5 (2022-04-11)
+
+Bug Fixes
+
+-   Changed how id for sub order post is retrieved (1db173)
+
+------------------------------------------------------------------------
+
+2.3.4 (2022-04-11)
+
+Bug Fixes
+
+-   Changed how data is validated when creating a token with basic
+    infomation (f89962)
+
+------------------------------------------------------------------------
+
+2.3.3 (2022-04-09)
+
+Bug Fixes
+
+-   Added check to ensure fee allocation is set correctly (036547)
+
+------------------------------------------------------------------------
+
+2.3.2 (2022-04-07)
+
+Bug Fixes
+
+-   Removed old incomplete account messages (15880f)
+
+------------------------------------------------------------------------
+
+## 2.3.1 (2022-03-24)
+
+2.3.0 (2022-03-24)
+
+Features
+
+-   Added function to retrieve or create a token id for a user (fec055)
+-   Added withdraw function with support for the doken dashboard
+    (be0c68)
+-   Changed how token id’s are retrieved when creating a transaction
+    (4d4c62)
+
+Bug Fixes
+
+-   Simplified the qraphql mutation used for creating or updating a
+    token (75570b)
+
+------------------------------------------------------------------------
+
+2.2.3 (2022-02-09)
+
+Bug Fixes
+
+-   Changed how the existence of data is validated when creating a token
+    (f6f603)
+
+------------------------------------------------------------------------
+
+2.2.2 (2022-02-07)
+
+Bug Fixes
+
+-   Added additional validation to order state transisions (eee15e)
+
+------------------------------------------------------------------------
+
+2.2.1 (2022-02-01)
+
+Bug Fixes
+
+-   Do not disable updates for products if user is admin (776f09)
+
+------------------------------------------------------------------------
+
+2.2.0 (2022-01-31)
+
+Features
+
+-   Added withdraw support for dokan (a88689)
+
+Bug Fixes
+
+-   Set tokens to payout on a montly basis (0d27ad)
+
+------------------------------------------------------------------------
+
+2.1.3 (2022-01-11)
+
+Bug Fixes
+
+-   Added optional validation to organisation details to ensure basic
+    details are captured (59662e)
+
+------------------------------------------------------------------------
+
+2.1.2 (2022-01-10)
+
+Bug Fixes
+
+-   Updated css to avoid any potential conflicts (df65ef)
+
+------------------------------------------------------------------------
+
+2.1.1 (2022-01-10)
+
+Bug Fixes
+
+-   Updated publish check to only apply to products (e996eb)
+
+------------------------------------------------------------------------
+
+2.1.0 (2022-01-06)
+
+Features
+
+-   Added btton to start go live request (43f2ac)
+
+Bug Fixes
+
+-   Changed formatting of line items added to the transaction
+    description (b1d4e4)
+
+------------------------------------------------------------------------
+
+2.0.5 (2021-12-17)
+
+Bug Fixes
+
+-   Corrected issue where production url was not loading correctly
+    (bf1e58)
+
+------------------------------------------------------------------------
+
+2.0.4 (2021-12-17)
+
+Bug Fixes
+
+-   Removed depricated buyer accept option (103c12)
+
+------------------------------------------------------------------------
+
+2.0.3 (2021-12-17)
+
+Bug Fixes
+
+-   Improved error handeling (d1fad8)
+
+------------------------------------------------------------------------
+
+2.0.2 (2021-12-17)
+
+Bug Fixes
+
+-   Added helper functions to ensure compatibility with older versions
+    of the plugin (256fad)
+
+------------------------------------------------------------------------
+
+2.0.1 (2021-12-17)
+
+Bug Fixes
+
+-   Added helper function for checking if production url is active
+    (b39a79)
+
+------------------------------------------------------------------------
+
+2.0.0 (2021-12-14)
+
+Features
+
+-   Added new acceptance process (c28975)
+-   Allow checkout without needing an account (e02f6c)
+
+Bug Fixes
+
+-   Ensure transaction id is saved to order meta data before redirect
+    (550e89)
+
+------------------------------------------------------------------------
+
+1.2.5 (2021-08-12)
+
+Bug Fixes
+
+-   Updated to WordPress support to version 5.8 and WooCommerce support
+    to version 5.5 (560333)
+
+------------------------------------------------------------------------
+
+1.2.4 (2021-07-14)
+
+Bug Fixes
+
+-   Improved error handeling when client details are invalid (3a2e3d)
+
+------------------------------------------------------------------------
+
+1.2.3 (2021-07-14)
+
+Bug Fixes
+
+-   Added status section to plugin settings page to help with debugging
+    (d304a6)
+
+------------------------------------------------------------------------
+
+1.2.2 (2021-07-13)
+
+Bug Fixes
+
+-   Added check to avoid transcations with missing tokens (c830bc)
+
+------------------------------------------------------------------------
+
+1.2.1 (2021-06-30)
+
+Bug Fixes
+
+-   Updated tradesafe php client to support tokens without id numbers
+    (c4e65c)
+
+------------------------------------------------------------------------
+
+1.2.0 (2021-06-30)
+
+Features
+
+-   Removed ID number field from checkout page as it will now be
+    requested on the payment page (ab7bb0)
+
+------------------------------------------------------------------------
+
+1.1.0 (2021-06-25)
+
+Features
+
+-   Added the option to include a users id number on checkout (92d11a)
+
+------------------------------------------------------------------------
+
+1.0.6 (2021-06-22)
+
+------------------------------------------------------------------------
+
+1.0.5 (2021-06-21)
+
+Bug Fixes
+
+-   Don’t call wp_die if api connection fails (d48f88)
+
+------------------------------------------------------------------------
+
+1.0.4 (2021-06-17)
+
+Bug Fixes
+
+-   Removed reference to internal development API (b38ceb)
+
+------------------------------------------------------------------------
+
+1.0.3 (2021-06-17)
+
+Bug Fixes
+
+-   Updated exclude list to fix issue where not all files are deployed
+    wordpress.org (18caec)
+
+------------------------------------------------------------------------
+
+1.0.2 (2021-06-14)
+
+------------------------------------------------------------------------
+
+1.0.1 (2021-06-11)
+
+Bug Fixes
+
+-   Updated plugin info and links for final release (74c9a6)
+
+------------------------------------------------------------------------
+
+1.0.0 (2021-06-08)
+
+Features
+
+-   Added notice for users about bank account details (c1cfa2)
+-   Added settings allow or disallow user to change order/transaction
+    state (681d82)
+-   Added token validation for buyers and sellers to ensure their
+    account is completed (64704d)
+
+Bug Fixes
+
+-   Calculate cart total without escrow fee (606924)
+-   Display accept button on order in proccessing state (6d7896)
+-   Updated field type for tax number (0499d0)
+-   Updated get option function to return single value for validation
+    check (679d45)
+-   Updated tradesafe api library (340bfa)
+-   Updated variable name broken by refactoring (9518ea)
+-   Updated variable name for tradesafe fee allocation (a0bcb2)
+
+Settings
+
+-   Added missing section definition and admin settings page (72eb1f)
+
+------------------------------------------------------------------------
